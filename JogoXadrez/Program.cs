@@ -8,23 +8,30 @@ namespace JogoXadrez
     {
         static void Main(string[] args)
         {
-            try
-            {
-                Tabuleiro tab = new Tabuleiro(8, 8);
 
-                tab.ColocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
-                tab.ColocarPeca(new Torre(tab, Cor.Preta), new Posicao(1, 9));
-                tab.ColocarPeca(new Rei(tab, Cor.Preta), new Posicao(0, 2));
+            PosicaoXadrez pos = new PosicaoXadrez('c', 7);
 
-                Tela.ImprimirTabuleiro(tab);
+            Console.WriteLine(pos);
 
-                Console.ReadLine();
-            }
+            Console.WriteLine(pos.ConvertToPosicao());
 
-            catch (Exception err)
-            {
-                Console.WriteLine(err.Message);
-            }
+            //try
+            //{
+            //    Tabuleiro tab = new Tabuleiro(8, 8);
+
+            //    tab.ColocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
+            //    tab.ColocarPeca(new Torre(tab, Cor.Preta), new Posicao(1, 9));
+            //    tab.ColocarPeca(new Rei(tab, Cor.Preta), new Posicao(0, 2));
+
+            //    Tela.ImprimirTabuleiro(tab);
+
+            //    Console.ReadLine();
+            //}
+
+            //catch (Exception err)
+            //{
+            //    Console.WriteLine(err.Message);
+            //}
         }
     }
 }
