@@ -20,7 +20,12 @@ namespace tabuleiro
             return Pecas[linha, coluna];
         }
 
-        public Peca peca(Posicao pos) 
+        public Peca peca(int linha, int coluna) 
+        {
+            return Pecas[linha, coluna];
+        }
+
+        public Peca peca(Posicao pos)
         {
             return Pecas[pos.Linha, pos.Coluna];
         }
