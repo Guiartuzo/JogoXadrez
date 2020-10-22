@@ -1,4 +1,7 @@
-﻿namespace tabuleiro
+﻿using System;
+using tabuleiro;
+
+namespace tabuleiro
 {
     class Peca
     {
@@ -13,6 +16,11 @@
             CorPeca = corPeca;
             QtdMovimentos = 0;
             Tab = tab;
+        }
+
+        public void IncrementarQteMovimentos()
+        {
+            QtdMovimentos++;
         }
     }
 }
