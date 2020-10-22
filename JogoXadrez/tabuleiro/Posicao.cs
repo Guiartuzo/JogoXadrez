@@ -1,4 +1,6 @@
-﻿namespace tabuleiro
+﻿using System.Reflection.PortableExecutable;
+
+namespace tabuleiro
 {
     class Posicao
     {
@@ -6,6 +8,12 @@
         public int Coluna { get; set; }
 
         public Posicao(int linha, int coluna) 
+        {
+            Linha = linha;
+            Coluna = coluna;
+        }
+
+        public void DefinirValores(int linha, int coluna)
         {
             Linha = linha;
             Coluna = coluna;
