@@ -35,6 +35,7 @@ namespace tabuleiro
             ValidarPosicao(pos);
             return peca(pos) != null;
         }
+
         public void ColocarPeca(Peca p, Posicao pos) 
         {
             if (ExistePeca(pos))
